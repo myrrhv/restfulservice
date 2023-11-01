@@ -51,7 +51,7 @@ app.delete('/books/:id', async (req, res) => {
     res.json({ message: 'Запис видалено' });
 });
 
-app.get('/books/:genre', async (req, res) => {
+app.get('/books/genre/:genre', async (req, res) => {
     const genre = req.params.genre;
 
     try {

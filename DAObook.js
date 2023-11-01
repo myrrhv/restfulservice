@@ -67,9 +67,11 @@ class BookDAO {
             const books = await Book.find({ genre: genre });
             return books;
         } catch (error) {
-            throw new Error('Error fetching books by genre from database: ' + error.message);
+            throw new Error('Error fetching books by genre from database');
         }
     }
+
+
 }
 
 module.exports = BookDAO;
